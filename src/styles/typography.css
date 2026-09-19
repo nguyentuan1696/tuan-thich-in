@@ -1,0 +1,4 @@
+body {
+  /* Gọi biến font local, nếu lỗi sẽ tự động chuyển sang font hệ thống sans-serif */
+  font-family: var(--font-be-vietnam-pro), sans-serif; 
+}
