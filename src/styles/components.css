@@ -1,0 +1,6 @@
+.app-shell {
+    --page-padding: clamp(1rem, 2.5vw, 2rem);
+    min-height: 100vh;
+    container-type: inline-size;
+    padding: var(--page-padding);
+}
