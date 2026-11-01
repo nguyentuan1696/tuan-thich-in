@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const focusAreas = [
   {
@@ -20,9 +21,9 @@ export default function Home() {
     <article className="home" id="top">
       <div className="home-content">
         <header className="site-header">
-          <a aria-label="Tuan Nguyen, home" className="wordmark" href="#top">
+          <Link aria-label="Tuan Nguyen, home" className="wordmark" href="/">
             <span className="wordmark-at">@</span>tuan
-          </a>
+          </Link>
           <nav aria-label="Social links" className="social-links">
             <a
               href="https://github.com/nguyentuan1696"
@@ -112,17 +113,19 @@ export default function Home() {
         </footer>
       </div>
       <figure className="portrait">
-        <Image
-          alt="Illustration of the Ninh Binh countryside in Vietnam"
-          className="portrait-image"
-          height={1000}
-          priority
-          sizes="(min-width: 960px) 34vw, 100vw"
-          src="/ninh-binh.jpeg"
-          width={562}
-        />
+        <div className="portrait-art">
+          <Image
+            alt="Illustration of the Ninh Binh countryside in Vietnam"
+            className="portrait-image"
+            height={1024}
+            priority
+            sizes="(min-width: 960px) 34vw, 100vw"
+            src="/ninh-binh.svg"
+            width={562}
+          />
+        </div>
         <figcaption className="portrait-caption">
-          A little piece of home · Ninh Bình, Việt Nam
+          A little piece of home · Tam Cốc Bích Động, Ninh Bình, Việt Nam
         </figcaption>
       </figure>
     </article>
