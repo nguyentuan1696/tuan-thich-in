@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 const focusAreas = [
   {
     title: "Useful software",
@@ -33,11 +34,11 @@ export default function Home() {
               GitHub <span aria-hidden="true">↗</span>
             </a>
             <a
-              href="https://x.com/nguyentuan1696"
+              href="https://www.linkedin.com/in/nguyentuan1696"
               rel="noreferrer"
               target="_blank"
             >
-              X <span aria-hidden="true">↗</span>
+              Linkedin <span aria-hidden="true">↗</span>
             </a>
           </nav>
         </header>
