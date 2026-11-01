@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CornerDownRight, MoveUpRight } from "lucide-react";
 
 
 const focusAreas = [
@@ -31,14 +32,20 @@ export default function Home() {
               rel="noreferrer"
               target="_blank"
             >
-              GitHub <span aria-hidden="true">↗</span>
+              GitHub{" "}
+              <span aria-hidden="true">
+                <MoveUpRight size={14} />
+              </span>
             </a>
             <a
               href="https://www.linkedin.com/in/nguyentuan1696"
               rel="noreferrer"
               target="_blank"
             >
-              Linkedin <span aria-hidden="true">↗</span>
+              Linkedin{" "}
+              <span aria-hidden="true">
+                <MoveUpRight size={14} />
+              </span>
             </a>
           </nav>
         </header>
@@ -51,7 +58,7 @@ export default function Home() {
 
           <div className="bio-copy">
             <p>
-              I’m Tuan, a product builder and developer. I enjoy turning
+              I'm Tuan, a product builder and developer. I enjoy turning
               thoughtful ideas into useful things for the web.
             </p>
             <p>
@@ -76,7 +83,7 @@ export default function Home() {
             {focusAreas.map((area) => (
               <li className="focus-item" key={area.title}>
                 <span className="focus-marker" aria-hidden="true">
-                  ↳
+                  <CornerDownRight size={16} />
                 </span>
                 <div>
                   <h3>{area.title}</h3>
@@ -93,7 +100,7 @@ export default function Home() {
         >
           <div className="section-heading">
             <div>
-              <p className="eyebrow">Things I’m exploring</p>
+              <p className="eyebrow">Things I'm exploring</p>
               <h2 id="writing-heading">Writing</h2>
             </div>
             <span aria-hidden="true" className="section-index">
@@ -108,9 +115,6 @@ export default function Home() {
 
         <footer className="site-footer">
           <span>Made with care.</span>
-          <a href="#top">
-            Back to top <span aria-hidden="true">↑</span>
-          </a>
         </footer>
       </div>
       <figure className="portrait">
