@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from '@next/third-parties/google'
 import "@/styles/globals.css";
 
 
@@ -49,7 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en">
       <body className="antialiased">
         <main className="app-shell">{children}</main>
-        <GoogleAnalytics gaId="G-BV68HG6H3N" />
+        <GoogleTagManager gtmId="GTM-KPLSWCJZ" />
       </body>
     </html>
   );
