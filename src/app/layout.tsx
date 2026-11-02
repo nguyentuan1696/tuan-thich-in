@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "@/styles/globals.css";
+
 
 const siteUrl = "https://tuan.thich.in";
 
@@ -47,6 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en">
       <body className="antialiased">
         <main className="app-shell">{children}</main>
+        <GoogleAnalytics gaId="G-BV68HG6H3N" />
       </body>
     </html>
   );
